@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>みえリニア応援クラブ</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/club.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+	<meta name="viewport" content="width=device-width">
+	<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+</head>
+<body>
+	<!-- ヘッダー -->
+	<header>
+		<div class="header">
+			<div id="logo"><a href="top.html"><nobr>リニアホームページタイトル</nobr></a></div>
+			<ul class="hd-ul">
+				<li class="hd-li"><a href="impact.html" class="list-a">三重が変わる</a></li>
+				<li class="hd-li"><a href="kids.html" class="list-a">キッズページ</a></li>
+				<li class="hd-li"><a href="club.html" class="list-a">みえリニア応援クラブ</a></li>
+				<li class="hd-li"><a href="news.html" class="list-a">新着情報</a></li>
+				<li class="hd-li"><a href="link.html" class="list-a">リンク集</a></li>
+			</ul>
+			<div id="nav">
+				<input id="input" type="checkbox" class="unshown"/>
+				<label id="open" for="input"><span></span></label>
+				<label id="close" for="input" class="unshown"></label>
+				<div id="content">
+					<ul class="nav-ul">
+						<li class="nav-li"><a href="impact.html" class="list-a">三重が変わる</a></li>
+						<li class="nav-li"><a href="kids.html" class="list-a">キッズページ</a></li>
+						<li class="nav-li"><a href="club.html" class="list-a">みえリニア応援クラブ</a></li>
+						<li class="nav-li"><a href="news.html" class="list-a">新着情報</a></li>
+						<li class="nav-li"><a href="link.html" class="list-a">リンク集</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- メイン -->
+	<main>
+
+
+		<div id="club">
+			<div class="background">
+				<h1><nobr><span class="dash">――</span>  みえリニア</nobr><span class="shift">応援クラブ</span></h1>
+			</div>
+		</div>
+
+		<div id="recruit">
+			<h2>新規会員募集中！</h2>
+			<p>リニア中央新幹線の<nobr>県内駅位置の早期確定及び</nobr><br>一日も早い全線開業の実現に向け、<br>ともに啓発活動に取り組んでいただける方を募集しています。</p>
+			<p><span class="fc">対象：申込時点で中学生以上40歳未満の方</span></p>
+			<h3>入会金・年会費は無料です。<br>会員特典として、<nobr>リニアオリジナル啓発グッズを</nobr><nobr>プレゼントします。</nobr></h3>
+			<p><span class="app-form">申込フォーム</span></p>
+		</div>
+
+		<div id="inquiry">
+			<div class="dotted"></div>
+
+			<h2>会員様の皆様へのお願い</h2>
+			<p>新しい三重の未来づくりのために、<br>会員の皆さんのリニアに対する思い、夢やアイディアをお寄せください。</p>
+			<p><span class="fc">※全項目入力必須</span></p>
+
+			<form method="post" action="linear.php">
+				<!-- テーマ -->
+				<label for="theme" class="label-title"><span class="greater">＞</span>テーマ</label>
+				<input name="theme" type="text" class="input-title" id="theme" maxlength="50" placeholder="（例）地元の活性化" required>
+
+				<!-- 内容 -->
+				<label for="comment" class="label-title"><span class="greater">＞</span>内容</label>
+				<textarea name="comment" rows="1" cols="80" class="input-title" id="comment" maxlength="1000" placeholder="（例）リニアが開通することで三重県への観光が増え、地元が賑わうことを願っています。" required></textarea>
+
+				<!-- 会員名 -->
+				<label for="name" class="label-title"><span class="greater">＞</span>会員名</label>
+				<input type="text" name="name"  class="input-title"id="name" placeholder="（例）リニア 太郎" required>
+
+				<!-- 性別 -->
+				<label for="sex" class="label-title"><span class="greater">＞</span>性別</label>
+				<div class="flex" required>
+					<input type="radio" name="sex" value="male"id="otoko" style="margin:10px;">
+					<label for="otoko" accesskey="m">男</label>
+					<input type="radio" name="sex" value="female" id="onna" style="margin:10px;">
+					<label for="onna" accesskey="f">女</label>
+				</div>
+
+				<!-- 年齢 -->
+				<label for="age" class="label-title"><span class="greater">＞</span>年齢</label>
+				<select name="age" class="input-title" id="age" required>
+					<option value="">選択してください</option>
+					<option value="19歳以下">19歳以下</option>
+					<option value="20〜29歳">20〜29歳</option>
+					<option value="30〜39歳">30〜39歳</option>
+					<option value="40〜49歳">40〜49歳</option>
+					<option value="50〜59歳">50〜59歳</option>
+					<option value="60〜69歳">60〜69歳</option>
+					<option value="70歳以上">70歳以上</option>
+				</select>
+
+				<!-- 郵便番号 -->
+				<label for="hoge" class="label-title"><span class="greater">＞</span>郵便番号</label>
+				<input type="text" name="zip21" size="15" maxlength="7" class="input-title" id="hoge" onKeyUp="AjaxZip3.zip2addr('zip21','zip22','addr21','addr21');"  placeholder="（例）5140009【ハイフンなし】" required>
+
+
+				<!-- 住所 -->
+				<label for="address" class="label-title"><span class="greater">＞</span>住所</label>
+				<input type="text" name="addr21" size="40" class="input-title" id="address" placeholder="（例）三重県津市リニア町123" required>
+
+				<!--メールアドレス-->
+				<label for="email" class="label-title"><span class="greater">＞</span>電子メール</label>
+				<input type="email" name="email" size="40" class="input-title" id="email" placeholder="（例）mie-mie-mie@linear.jp【半角入力】" required>
+				<p class="important">個人情報や配慮に欠けると思われる表現などを除き、サイトや印刷物に掲載させていただく場合があります。
+				<br>掲載に支障のある場合は、その旨入力をお願いします。
+				<br>なお、収集した個人情報は、運営上必要な場合以外の目的で利用したり、第三者への提供は行いません。
+				<br>ただし、個人の生命保護のため特に必要があると認めるときなどは、この限りではありません。</p>
+				<input type="submit" value="送信" class="submit">
+
+			</form>
+
+		</div>
+
+		<div id="page_top"><a href="#"></a></div>
+	</main>
+	<!-- フッター -->
+	<footer>
+		<p>Copyright &copy; 2021 All Rights Reserved.</p>
+	</footer>
+</body>
+</html>
