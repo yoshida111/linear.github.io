@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* メイン */
+main{padding-top:200px;}
+
+/* タイトル */
+#link-collect{width:100%;height:60vh;margin-bottom:80px;position:relative;}
+.background{width:80%;height:100%;background-color:#7DA1CB;}
+.background h1{color:#fff;width:fit-content;height:fit-content;margin:0;padding:0;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-ms-writing-mode:tb-rl;writing-mode:vertical-rl;letter-spacing:0.8em;}
+.dash{letter-spacing:-0.2em;}
+
+
+/* メイン画面 */
+
+#link{width:60%;margin:0 auto 100px;}
+#link h2{padding:30px;text-align:center;}
+.flex{display:flex;}
+.link-ul{list-style:none;width:100%;margin:10px;}
+.link-li{display:block;margin:20px;}
+.link-li a{display:flex;justify-content:space-between;padding:10px 0px;}
+.link-li a:hover{color:#7DA1CB}
+.block{display:block;}
+.right{display:inline-block;text-align:right;margin:auto 0;}
+.line{border-right:1px solid #838383;}
+
+#res-link{display:none;}
+
+
+#page_top{width:50px;  height:50px;  position:fixed;  right:50px;  bottom:50px;  background:#fff;  opacity:0.6;}
+#page_top a{position:relative;  display:block;  width:50px;  height:50px;  text-decoration:none;}
+#page_top a::before{font-family:'Font Awesome 5 Free';  font-weight:900;  content:'\f106';  font-size:25px;  color:#0095F1;  position:absolute;  width:25px;  height:25px;  top:0;  bottom:0;  right:0;  left:0;  margin:auto;  text-align:center;}
+
+@media screen and (max-width:1024px){
+	main{padding-top:90px;}
+	#information{margin-bottom:20px;}
+	.dash{display:none;}
+	#link{display:none;}
+	#res-link{display:inherit;width:90%;margin:0 auto 100px;}
+	#res-link h2{padding:0px;text-align:center;}
+	.link-ul{margin:0 auto;}
+	.link-li{margin:20px 10px;}
+}

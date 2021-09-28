@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* メイン */
+main{padding-top:200px;}
+
+/* タイトル */
+#change{width:100%;height:60vh;margin-bottom:80px;position:relative;}
+.background{width:80%;height:100%;background-color:#4673A6;}
+.background h1{color:#fff;width:fit-content;height:fit-content;margin:0;padding:0;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-ms-writing-mode:tb-rl;writing-mode:vertical-rl;}
+.dash1{letter-spacing:-.2em;}
+.dash2{letter-spacing:-.2em;margin-right:1em;}
+
+/* 変わる */
+#how-cha{width:60%;margin:0 auto;margin-bottom:80px;}
+.list{height:100%;border-bottom:1px dashed #707070;padding:40px 0;}
+.list h2{color:#4673A6;line-height:normal;margin:10px auto;letter-spacing:0.5em;}
+.list p{line-height:3em;}
+.fc{color:#6F6F6F;}
+.flex{display:flex;}
+.grid{display:grid;align-items:center;padding-bottom:10px;}
+.ac-index{display:inline-block;font-size:16px;color:#4673A6;font-weight:bold;padding:20px 0 10px;}
+.osaka{margin-right:10px;}
+.small{font-size:16px;display:block;width:fit-content;}
+
+/* 観光情報 */
+#information{width:80%;margin:60px 0 60px 20%;}
+.info-title{width:75%;text-align:center;margin-top:20px;margin-bottom:40px;}
+.info-title h2{letter-spacing:0.4em;padding-left:0.4em;line-height:15px;font-weight:normal;}
+.information{display:flex;align-items: center;position:relative;overflow:hidden;}
+.photo-li:hover{opacity:0.6;}
+#information h3{height:443px;line-height:100px;padding:20px;margin-left:-1px;-ms-writing-mode:tb-rl;writing-mode:vertical-rl;z-index:10;background-color:#FFFFFF;top:50px;font-size:20px;letter-spacing:0.4em;}
+
+/* 流れる */
+.photo-ul{margin:0 auto;display:flex;animation-name: loop-slide;animation-duration:100s;animation-iteration-count:infinite;animation-timing-function:linear;animation-delay:0.3s;animation-fill-mode:both;}
+@keyframes loop-slide{from{transform:translateX(10%);}to{transform: translateX(-150%);}}
+.photo-li{margin:20px;border:none;display:block;}
+.photo-li h4{font-weight:normal;}
+.photo-bottom{width:90%;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+.photo-bottom p{margin:10px;}
+.arrow{font-size:0.8em;letter-spacing:0.2em;padding-left:0.2em;color: #4673A6;}
+/* 流れない非表示 */
+.res-info{display:none;}
+
+
+/* YouTube */
+#youtube{height:100%;width:60%;margin:10px auto 100px;}
+.youtube-title{width:100%;}
+.youtube-title h2{padding:40px 0;letter-spacing:0.4em;padding-left:0.4em;}
+.none{display:none;}
+.yt-bl p{color:#4673A6;margin-left:30px;}
+.yt-bl{margin:60px auto;display:flex;justify-content:space-between;align-items:center;}
+.yt-list{font-size:20px!important;letter-spacing:0.4em;}
+
+/* レスポンシブYouTube非表示 */
+#responsive{display:none;}
+
+
+
+/* タブレットサイズ */
+@media screen and (max-width:1024px) {
+  main{padding-top:90px;}
+  #change{margin-bottom:20px;}
+  .dash1{display:none;}
+
+  #how-cha{width:90%;margin-bottom:20px;}
+  .small{font-size:12px;}
+
+  #information{width:90%;margin:0 auto;}
+  .info-title{width:100%;margin-top:60px;margin-bottom:40px;}
+  .information{align-items:baseline;margin-bottom:60px;}
+  .flex{display:grid;}
+  .osaka{padding-right:inherit;margin-bottom:10px;}
+
+  /* 流れる非表示 */
+  .photo-ul{display:none;}
+
+  /* 流れない表示 */
+  .res-info{display:inline;}
+	.res-list{width:100%;height:auto;padding:0 20px;}
+	.res-list img{width:100%;height:auto;padding:0 30px;padding-bottom:0px;}
+  .res-list + .res-list{padding-top:30px;}
+	.photo-bottom{width:80%;}
+	h4{font-size:16px;color:#4673A6;letter-spacing:0.5em;padding-left:0.5em;}
+
+  /* YouTube非表示 */
+  #youtube{display:none;}
+
+  #responsive{display:inherit;width:90%;margin:0 auto;text-align:center;padding:0 10px 100px;}
+	#responsive h2{font-size:20px;letter-spacing:0.4em;padding-left:0.4em;font-weight:normal;font-weight:bold;}
+	.height{display:block;line-height:1.5em;padding-top:8px;}
+	.res-index{font-size:18px;color:#4673A6;font-weight:bold;padding:20px 0 10px;letter-spacing:0.5em;text-indent:0.5em;}
+}
+
+
+/* スマートフォンサイズ */
+@media screen and (max-width:559px) {
+  #change{margin-bottom:0px;}
+  .list{padding:40px 10px;}
+  .info-title h2 {font-size: 18px;line-height: 24px;}
+	.flex{display:grid;}
+	.osaka{padding-right:inherit;margin-bottom:10px;}
+	#information h3{line-height:50px;padding:60px 0;}
+	.res-list{padding:0;}
+}

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* メイン */
+main{padding-top:200px;}
+
+/* タイトル */
+#information{width:100%;height:60vh;margin-bottom:80px;position:relative;}
+.background{width:80%;height:100%;background-color:#011354;}
+.background h1{color:#fff;width:fit-content;height:fit-content;margin:0;padding:0;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-ms-writing-mode:tb-rl;writing-mode:vertical-rl;letter-spacing:0.8em;}
+.dash{letter-spacing:-0.2em;width:2em;margin-right:0.5em;}
+
+#news{width:60%;margin:0 auto 100px;text-align:center;height:auto;height:auto;}
+#news h2{margin:30px auto;line-height:27px;letter-spacing:0.2em;padding-left:0.2em;color:#011354;}
+#news p{margin:10px auto;}
+.pad{padding:12px 0 30px;}
+.fc{color:#6F6F6F;}
+.news-list{border-top:1px solid #303030;}
+.n-li{border-bottom:1px dotted #042F82;padding:4px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;}
+.flex{display:flex;align-items:center;justify-content:space-between;}
+.flex time,.flex p{padding:5px;}
+.news-a{color:#707070;}
+li.n-li:hover{opacity:0.4;}
+
+.grad-btn::before {content:"一覧を見る";display:inline-block;padding:10px 30px;cursor:pointer;color:#FFFFFF;background-color:rgba(1,19,84);margin:20px auto;}
+.grad-btn:hover{opacity:0.8;}
+.news-list {position: relative;overflow: hidden;height:300px;}
+.news-list::before{
+	display:block;position:absolute;
+	bottom:0;left:0;
+	width:100%;height:40px;
+	background:-webkit-linear-gradient(top,rgba(255,255,255,0)0%,rgba(255,255,255,0.9)50%,rgba(255,255,255,0.9)50%, #fff 100%);
+	background:linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);content: "";}
+.trigger{display:none;}
+.trigger:checked ~ .grad-btn::before{content:"閉じる";}
+.trigger:checked ~ .news-list{height:auto;}
+.trigger:checked ~ .news-list::before{display:none;}
+
+
+
+
+@media screen and (max-width:1024px){
+	main{padding-top:90px;}
+	#information{margin-bottom:20px;}
+	.dash{display:none;}
+	#news{width:90%;}
+	.fc{font-size:12px;}
+}

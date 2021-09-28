@@ -1,0 +1,53 @@
+@charset "UTF-8";
+h1,h2,h3,h4{font-family:"MS Pゴシック"}
+
+/* メイン */
+main{padding-top:200px;}
+
+/* タイトル */
+#kids{width:100%;height:60vh;margin-bottom:80px;position:relative;}
+.background{width:80%;height:100%;background-color:#0D60B3;}
+.background h1{color:#fff;width:fit-content;height:fit-content;margin:0;padding:0;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-ms-writing-mode:tb-rl;writing-mode:vertical-rl;}
+.dash{letter-spacing:-0.2em;}
+
+
+/* 学ぶ */
+#stady{width:60%;margin:0 auto;text-align:center;height:auto;}
+
+.stady-title{padding:40px 50px 80px;}
+.stady-title h2{color:#0D60B3;margin:30px auto;line-height:27px;letter-spacing:0.2em;text-indent:0.2em}
+.stady-title a{font-size:12px;display:inline-block;padding:5px 25px;margin:20px;color:#0D60B3;border:1px solid #0D60B3;}
+
+.challenge{display:flex;justify-content:center;align-items:center;padding:0px 0px 20px;}
+.challenge svg{width:25%;height:auto;}
+.perfect{width:30%;}
+.perfect h2{color:#0D60B3;margin:30px auto;line-height:27px;letter-spacing:0.2em;text-indent:0.2em}
+
+.quiz{padding:0px;margin:10px auto;}
+.quiz h3{border-radius:10px;background-color:#0D60B3;color:#FFFFFF;display:inline-block;padding:7px 35px;margin:10px;font-size:16px;border:solid 2px #0D60B3;}
+.quiz p{letter-spacing:0.1em;padding-left:0.1em;}
+.bold{font-weight:bold;font-size:16px;}
+.qa-color{color:#0D60B3;font-weight:bold;}
+.q-ul{list-style:none;}
+
+.hidden_box{margin:2em 0;padding:0;}
+.hidden_box label{display:inline-block;padding:7px 35px;border-radius:10px;cursor:pointer;background-color:#0D60B3;color:#FFFFFF;font-weight:bold;border:solid 2px #0D60B3;}
+.hidden_box label:hover{background-color:rgba(255,255,255,0.2);color:#0D60B3;border:solid 2px #0D60B3;transition:0.3s;}
+.hidden_box input{display: none;}
+.hidden_box .hidden_show{height:auto;padding:10px 0;overflow:hidden;opacity: 0;transition: 0.5s;}
+.hidden_box input:checked ~ .hidden_show{padding: 10px 0;height: auto;opacity: 1;}
+
+#stady ul{display:block;width:fit-content;margin:0 auto;text-align:left;}
+#stady li + li{border:0px}
+
+
+@media screen and (max-width:1024px){
+	main{padding-top:90px;}
+	#kids{margin-bottom:20px;}
+	.dash{display:none;}
+	#stady{width:90%;}
+	.stady-title{padding:10px 0px 20px;}
+	.challenge{display:flex;justify-content:space-between;}
+	.challenge svg{width:25%;}
+	.perfect{width:60%;}
+}

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* メイン */
+main{padding-top:200px;}
+/* 色タイトル */
+#club{width:100%;height:60vh;margin-bottom:250px;position:relative;}
+
+.background{width:80%;height:100%;background-color:#042F82;}
+.background h1{color:#fff;width:fit-content;height:fit-content;margin:0;padding:0;position:absolute;top:50%;left:50%;transform:translateY(-75%);-ms-writing-mode:tb-rl;writing-mode:vertical-rl;}
+.dash{letter-spacing:-0.2em;}
+.shift{display:block;position:absolute;right:2em;bottom:-40%;}
+
+ #recruit{width:60%;margin:100px auto 0px;text-align:center;}
+ #recruit h2{color:#042F82;padding:20px;letter-spacing:0.2em;}
+ #recruit p{line-height:2.3em;}
+ .fc{color:#6F6F6F;}
+ #recruit h3{font-size:16px;margin:40px auto 0;letter-spacing:0.2em;padding-left:0.2em;}
+ .app-form{display:inline-block;background-color:#042F82;color:#FFFFFF;padding:5px 50px;margin:10px auto 25px;}
+ .dotted{width:100%;border-bottom:1px dotted #707070;margin:30px 0;}
+
+#inquiry{margin:0px auto;text-align:center;height:auto;}
+#inquiry h2{color:#042F82;padding:20px;letter-spacing:0.2em;padding-left:0.2em;}
+#inquiry p{line-height:2.3em;}
+
+form{padding:0 50px;display:grid;text-align:left;}
+.flex{background-color:#F8F8F8;display:flex;align-items:center;line-height:1.8em;padding-left:8px;}
+.label-title{padding:35px 10px 5px;letter-spacing:0.2em;padding-left:0.2em;font-size:15px;}
+.input-title{text-decoration:none;background-color:#F8F8F8;width:100%;padding:5px;border:none;resize:vertical;min-height:2.5em;}
+.greater{color:#042F82;}
+.important{margin:40px auto;letter-spacing:0.1em;padding-left:0.1em;}
+.submit{background-color:#042F82;display:block;width:fit-content;margin:0 auto;color: #fff;padding:10px 80px;border:none;margin:0px auto 40px;}
+.submit:hover{opacity:0.8;transition:0.5s;}
+
+
+@media screen and (max-width:1024px) {
+	main{padding-top:90px;}
+	#club{margin-bottom:20px;}
+	/* タイトルダッシュ無くす */
+	.dash{display:none;}
+	#recruit{width:90%;margin:50px auto 30px;text-align:center;}
+	#inquiry{width:90%;margin:0px auto 50px;}
+	#recruit h3{font-size:14px;}
+	form{padding:0 10px;}
+	.input-title{line-height:100%;}
+}
